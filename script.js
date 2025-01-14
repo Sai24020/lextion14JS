@@ -60,7 +60,8 @@ const fruit = {
     color: "Green"
 
 }
-showMessage.fruit(name);
+console.log(fruit.name);
+//showMessage.fruit(name);
 
 //JSON
 
