@@ -60,7 +60,7 @@ const fruit = {
     color: "Green"
 
 }
-
+showMessage.fruit(name);
 
 //JSON
 
@@ -91,4 +91,5 @@ const myJson = {
 console.log(myJson.fruits);
 const stringify = JSON.stringify(myJson);
 console.log(stringify);
+
 

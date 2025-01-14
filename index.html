@@ -4,7 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modern JavaScript</title>
-
+    <script>// Hämta formuläret
+         const form = document.getElementById('myForm'); 
+        // Lägg till en händelselyssnare för "submit" 
+         form.addEventListener('submit', function(event) { 
+            event.preventDefault(); // Förhindra sidladdning
+            // Hämta värden från formuläret
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData);             // Skicka data till JavaScript
+            console.log(data); // Exempel: { name: "Ditt namn", email: "din@email.com" }
+             });
+              </script>
 </head>
 <body>
     <h1>Object</h1>
