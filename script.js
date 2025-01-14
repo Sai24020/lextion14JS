@@ -35,4 +35,4 @@ const myJson = {
 console.log(myJson.fruits);
 const stringify = JSON.stringify(myJson);
 console.log(stringify);
-console.log(window);
+
