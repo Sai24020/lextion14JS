@@ -6,8 +6,12 @@ console.log(name);// ['suzan', 'salma', 'laila']
 name.push('linda');
 console.log(name);// ['suzan', 'salma', 'laila', 'linda']
 
+let names = ['David', 'Christoffer', 'Johan', 'Maja'];
+console.log(names); // ['David', 'Christoffer', 'Johan', 'Maja']
+// Ta bort "Christoffer" och "Johan"
+names.splice(1, 2);
+console.log(names); // ['David', 'Maja']
 
-console.log(name);
 let fruits = ['kiwi', 'apple', 'pear'];
 console.log(fruits); // ['kiwi', 'apple', 'pear']
 
