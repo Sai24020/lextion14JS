@@ -1,3 +1,23 @@
+let namesList = [`Suzan`];
+namesList.push('Salma');
+console.log(namesList);// ['suzan', 'salma']
+namesList.push('laila');
+console.log(namesList);// ['suzan', 'salma', 'laila']
+namesList.push('linda');
+console.log(namesList);// ['suzan', 'salma', 'laila', 'linda']
+
+function addName() {
+    const nameInput = document.getElementById(`name`).value;
+
+    if (nameInput.trim() !== ``) {
+        namesList.push(nameInput.trim());
+        document.getElementById("demo2").innerHTML = namesList.join(`, `);
+        document.getElementById("name").value = ``;    
+    }  else {
+        alert(`Hoppsan.....Vänligen ange ett giltigt namn!`);
+    }
+}
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //   The Basics
 //-----------------------------------------------------
 
@@ -237,26 +257,7 @@ const stringify = JSON.stringify(myJson);
 console.log(stringify);
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-let namesList = [`Suzan`];
-namesList.push('Salma');
-console.log(namesList);// ['suzan', 'salma']
-namesList.push('laila');
-console.log(namesList);// ['suzan', 'salma', 'laila']
-namesList.push('linda');
-console.log(namesList);// ['suzan', 'salma', 'laila', 'linda']
 
-function addName() {
-    const nameInput = document.getElementById(`name`).value;
-
-    if (nameInput.trim() !== ``) {
-        namesList.push(nameInput.trim());
-        document.getElementById("demo2").innerHTML = namesList.join(`, `);
-        document.getElementById("name").value = ``;    
-    }  else {
-        alert(`Hoppsan.....Vänligen ange ett giltigt namn!`);
-    }
-}
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 const months = ["Jan", "Feb", "Mar", "Nov", "Dec"];
 console.log(months);
 const sorted1 = months.splice(3, 0, 'Apr', 'Maj', 'Jun', "Jul", "Aug", "Sep", "Oct");
